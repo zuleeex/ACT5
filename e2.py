@@ -24,19 +24,15 @@ def calcularPromedios(data):
 
 st.title("Calcular Promedio de Estudiantes")
 
-
 uploaded_file = st.file_uploader("Elige un archivo TXT", type="txt")
 
 if uploaded_file is not None:
    
     data = uploaded_file.getvalue().decode("utf-8")
     
-    
     promedios = calcularPromedios(data)
-    
-    
+     
     st.text_area("Promedios calculados:", promedios, height=200)
-    
     
     st.download_button(
         label="Descargar archivo de promedios",

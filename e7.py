@@ -12,7 +12,7 @@ def errores(data):
 
 st.title("Resumen de Errores")
 
-uploaded_file = st.file_uploader("Cargar archivo de errores (formato .log)", type="log")
+uploaded_file = st.file_uploader("Cargar archivo de errores", type="log")
 
 if uploaded_file is not None:
    
